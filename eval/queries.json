@@ -1,0 +1,50 @@
+[
+  {
+    "query": "that thing about running services on a tiny computer",
+    "expected_item_ids": ["item-003"],
+    "query_type": "vague",
+    "notes": "Does not explicitly mention Raspberry Pi, Docker, or home server."
+  },
+  {
+    "query": "how do containers find each other",
+    "expected_item_ids": ["item-008"],
+    "query_type": "conceptual",
+    "notes": "Tests semantic retrieval without using the phrase Docker networking."
+  },
+  {
+    "query": "FastAPI dependency injection",
+    "expected_item_ids": ["item-005"],
+    "query_type": "exact_keyword",
+    "notes": "Expected item contains the important terms directly."
+  },
+  {
+    "query": "SQLite vs PostgreSQL",
+    "expected_item_ids": ["item-010"],
+    "query_type": "title",
+    "notes": "Exact title lookup."
+  },
+  {
+    "query": "why reviewing things over time helps me remember",
+    "expected_item_ids": ["item-007"],
+    "query_type": "vague",
+    "notes": "Tests the spaced repetition concept without naming it."
+  },
+  {
+    "query": "coffee tastes sour because of extraction",
+    "expected_item_ids": ["item-006"],
+    "query_type": "conceptual",
+    "notes": "Tests semantic matching around espresso extraction."
+  },
+  {
+    "query": "database query planner indexes",
+    "expected_item_ids": ["item-001"],
+    "query_type": "exact_keyword",
+    "notes": "Keyword-heavy database query."
+  },
+  {
+    "query": "places to visit in Japan away from crowds",
+    "expected_item_ids": ["item-009"],
+    "query_type": "mixed",
+    "notes": "Japan is broader than Kyoto while quieter places is semantic."
+  }
+]

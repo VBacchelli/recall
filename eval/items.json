@@ -1,0 +1,72 @@
+[
+  {
+    "id": "item-001",
+    "title": "Understanding PostgreSQL Indexes",
+    "source": "webpage",
+    "url": "https://example.com/postgres-indexes",
+    "content": "An introduction to PostgreSQL indexes, including B-tree indexes, query performance, and how the database query planner decides whether to use an index."
+  },
+  {
+    "id": "item-002",
+    "title": "Why We Sleep",
+    "source": "youtube",
+    "url": "https://youtube.com/watch?v=example1",
+    "content": "A discussion about sleep quality, circadian rhythms, memory consolidation, and why consistent sleep schedules can improve health and cognitive performance."
+  },
+  {
+    "id": "item-003",
+    "title": "Building a Raspberry Pi Home Server",
+    "source": "reddit",
+    "url": "https://reddit.com/r/selfhosted/example",
+    "content": "A guide to running self-hosted services on a Raspberry Pi using Docker Compose, external storage, backups, and a reverse proxy."
+  },
+  {
+    "id": "item-004",
+    "title": "How Compound Interest Builds Wealth",
+    "source": "webpage",
+    "url": "https://example.com/compound-interest",
+    "content": "An explanation of compound interest, long-term investing, reinvesting returns, and why starting to invest early can have a large effect over decades."
+  },
+  {
+    "id": "item-005",
+    "title": "FastAPI Dependency Injection Explained",
+    "source": "youtube",
+    "url": "https://youtube.com/watch?v=example2",
+    "content": "A tutorial explaining FastAPI dependency injection, Depends, reusable request logic, database sessions, authentication dependencies, and testing."
+  },
+  {
+    "id": "item-006",
+    "title": "The Science of Making Espresso",
+    "source": "webpage",
+    "url": "https://example.com/espresso",
+    "content": "A practical explanation of espresso extraction covering grind size, water temperature, pressure, dose, yield, and how these variables affect sour and bitter flavors."
+  },
+  {
+    "id": "item-007",
+    "title": "Learning Through Spaced Repetition",
+    "source": "reddit",
+    "url": "https://reddit.com/r/learnprogramming/example",
+    "content": "A discussion about remembering material for longer using spaced repetition, active recall, flashcards, and reviewing information at increasing intervals."
+  },
+  {
+    "id": "item-008",
+    "title": "Docker Networking for Beginners",
+    "source": "webpage",
+    "url": "https://example.com/docker-networking",
+    "content": "An introduction to Docker networks, container DNS, port publishing, bridge networks, and how containers communicate with each other in Docker Compose."
+  },
+  {
+    "id": "item-009",
+    "title": "A Weekend in Kyoto",
+    "source": "youtube",
+    "url": "https://youtube.com/watch?v=example3",
+    "content": "A travel guide for a weekend in Kyoto covering temples, traditional neighborhoods, local food, public transportation, and quieter places away from major tourist crowds."
+  },
+  {
+    "id": "item-010",
+    "title": "SQLite vs PostgreSQL",
+    "source": "reddit",
+    "url": "https://reddit.com/r/programming/example",
+    "content": "A discussion comparing SQLite and PostgreSQL, including deployment complexity, concurrency, server requirements, transactions, and when each database is appropriate."
+  }
+]

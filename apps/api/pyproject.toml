@@ -7,7 +7,12 @@ authors = [
     { name = "VBacchelli", email = "valebacchelli@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pgvector>=0.5.0",
+    "psycopg[binary]>=3.3.6",
+    "sentence-transformers>=6.1.0",
+    "sqlalchemy>=2.1.1",
+]
 
 [project.scripts]
 api = "api:main"

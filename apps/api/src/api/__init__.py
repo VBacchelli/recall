@@ -1,2 +1,6 @@
+from api.db import init_db
+
+
 def main() -> None:
-    print("Hello from api!")
+    init_db()
+    print("Recall database initialized.")
