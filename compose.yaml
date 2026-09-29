@@ -1,0 +1,14 @@
+services:
+  db:
+    image: pgvector/pgvector:0.8.1-pg17
+    environment:
+      POSTGRES_DB: recall
+      POSTGRES_USER: recall
+      POSTGRES_PASSWORD: recall_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - recall_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  recall_postgres_data:
