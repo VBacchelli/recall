@@ -19,7 +19,8 @@ def evaluate(k: int = 5) -> None:
 
     for query_data in queries:
         query = query_data["query"]
-        expected_ids = set(query_data["expected_item_ids"])
+        expected_ids = set(query_data.get("expected_item_ids", []))
+        expected_urls = set(query_data.get("expected_urls", []))
 
         results = search_items(
             query,
@@ -28,11 +29,15 @@ def evaluate(k: int = 5) -> None:
         )
 
         result_ids = [item.id for item, _ in results]
+        result_urls = [item.url for item, _ in results]
 
         relevant_ranks = [
             rank
-            for rank, item_id in enumerate(result_ids, start=1)
-            if item_id in expected_ids
+            for rank, (item_id, item_url) in enumerate(
+                zip(result_ids, result_urls),
+                start=1,
+            )
+            if item_id in expected_ids or item_url in expected_urls
         ]
 
         recall = 1.0 if relevant_ranks else 0.0
@@ -46,7 +51,10 @@ def evaluate(k: int = 5) -> None:
         reciprocal_ranks.append(reciprocal_rank)
 
         print(f"\nQuery: {query}")
-        print(f"Expected: {sorted(expected_ids)}")
+        print(
+            f"Expected IDs: {sorted(expected_ids)} | "
+            f"Expected URLs: {sorted(expected_urls)}"
+        )
         print(f"Top {k}: {result_ids}")
 
         if relevant_ranks:

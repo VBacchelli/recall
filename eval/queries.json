@@ -46,5 +46,13 @@
     "expected_item_ids": ["item-009"],
     "query_type": "mixed",
     "notes": "Japan is broader than Kyoto while quieter places is semantic."
-  }
+  },
+{
+  "query": "software for packaging applications into portable containers",
+  "expected_urls": [
+    "https://en.wikipedia.org/wiki/Docker_(software)"
+  ],
+  "query_type": "real_content",
+  "notes": "Real webpage ingested through the HTTP API."
+}
 ]
